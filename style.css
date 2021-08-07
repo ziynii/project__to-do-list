@@ -1,1 +1,90 @@
 @import 'reset.css';
+
+:root {
+	--main-color: thistle;
+	--main-font-color: #fffff7;
+}
+
+body {
+	background-color: var(--main-color);
+	color: var(--main-font-color)
+}
+
+.todo {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	height: 600px;
+	background-color: #333333;
+	margin: 60px auto;
+	padding: 2rem;
+	border-radius: 6px;
+	box-shadow: 2px 5px 21px 0px rgba(0,0,0,0.58);
+}
+
+.todo__title {
+	text-align: center;
+	margin-bottom: 1.5rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.date-weather {
+	display: flex;
+	padding-bottom: 1.2rem;
+	border-bottom: 1px solid var(--main-color)
+}
+
+.todo__date {
+	flex-basis: 50%;
+	background-color: thistle;
+}
+
+.todo__weather {
+	flex-basis: 50%;
+	background-color: lightblue;
+}
+
+.todo__items {
+	margin: 1.2rem 0;
+	flex: 1;
+}
+
+.todo__item {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 1.2rem;
+	/* 수정 필요 */
+	border-bottom: 1px solid var(--main-color);
+}
+
+.todo__items  .buttons {
+	color: var(--main-color);
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+
+.todo__form {
+	text-align: center;
+}
+
+.todo__input {
+	width: 80%;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid var(--main-color);
+	color: var(--main-font-color);
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.todo__submit {
+	padding: 0.4rem 1rem;
+	border-radius: 24px;
+	border: none;
+	color: var(--main-font-color);
+	background-color: var(--main-color);
+	cursor: pointer;
+}
