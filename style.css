@@ -14,6 +14,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	width: 60%;
+	max-width: 500px;
 	height: 600px;
 	background-color: #333333;
 	margin: 60px auto;
@@ -24,7 +25,7 @@ body {
 
 .todo__title {
 	text-align: center;
-	margin-bottom: 1.5rem;
+	margin-bottom: 1.8rem;
 	font-size: 1.5rem;
 	font-weight: bold;
 }
@@ -32,30 +33,49 @@ body {
 .date-weather {
 	display: flex;
 	padding-bottom: 1.2rem;
-	border-bottom: 1px solid var(--main-color)
+	border-bottom: 3px solid var(--main-color);
 }
 
 .todo__date {
 	flex-basis: 50%;
-	background-color: thistle;
+	font-size: 1.2rem;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.date {
+	padding-left: 0.2rem;
+}
+
+.day {
+	padding: 0.8rem 0;
 }
 
 .todo__weather {
 	flex-basis: 50%;
-	background-color: lightblue;
+	text-align: center;
+}
+
+.weather-icon {
+	display: block;
+	margin: auto;
 }
 
 .todo__items {
-	margin: 1.2rem 0;
 	flex: 1;
+	overflow-y: auto
 }
 
 .todo__item {
 	display: flex;
 	justify-content: space-between;
-	padding-bottom: 1.2rem;
-	/* 수정 필요 */
+	padding: 1.2rem 0;
 	border-bottom: 1px solid var(--main-color);
+}
+
+span.checked {
+	text-decoration: line-through;
+	color: darkgray;
 }
 
 .todo__items  .buttons {
@@ -63,6 +83,13 @@ body {
 	background-color: transparent;
 	border: none;
 	outline: none;
+	transition: all 100ms;
+	/* justify-content: flex-end; */
+}
+
+.buttons:hover {
+	transform: scale(1.2);
+	color:  rgb(138, 90, 158);
 }
 
 .todo__form {
@@ -87,4 +114,8 @@ body {
 	color: var(--main-font-color);
 	background-color: var(--main-color);
 	cursor: pointer;
+}
+
+.todo__submit:hover {
+	background-color: rgb(138, 90, 158);
 }

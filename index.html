@@ -15,29 +15,24 @@
   <body>
     <div class="todo">
       <h1 class="todo__title">TO-DO LIST</h1>
-      <div class="todo__date">
-        <span class="month">Aug</span>
-        <span class="date">18</span>
-        <p class="day">monday</p>
+      <div class="date-weather">
+        <div class="todo__date">
+          <span class="month">Aug</span>
+          <span class="date">18</span>
+          <p class="day">monday</p>
+        </div>
+        <div class="todo__weather">
+					<span class="temp"></span>
+					<span class="weather-main"></span>
+				</div>
       </div>
-			<div class="todo__weather">
-				
-			</div>
+      <ul class="todo__items">
+      
+      </ul>
       <form class="todo__form">
         <input type="text" class="todo__input" />
-        <input type="submit" class="todo__submit" />
+        <input type="submit" class="todo__submit" value="Add"/>
       </form>
-      <ul class="todo__items">
-        <li class="todo1__item">
-          study
-          <span class="item__button">
-            <button class="check__btn"><i class="fas fa-check"></i></button>
-            <button class="delete__btn">
-              <i class="fas fa-trash-alt"></i>
-            </button>
-          </span>
-        </li>
-      </ul>
     </div>
   </body>
 </html>
